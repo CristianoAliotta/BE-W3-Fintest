@@ -1,0 +1,221 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="BE_W3_Fintest.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="Content/animate.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header container-fluid px-0">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <i class="fa-solid fa-cookie-bite text-white fs-1 ms-3 mb-2"></i>
+        <span class="ms-2  text-white coName">Cookies</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="https://www.instagram.com/cookiessf/" class="nav-link text-white fs-4 mt-2 "><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="nav-item"><a href="https://twitter.com/cookiescbdstore" class="nav-link text-white fs-4 mt-2 "><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </header>
+  </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    </form>
+ <style>
+body{
+    background-color: #222222;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.header{
+    height:10vh;
+    font-size:1rem;
+    border:0
+}
+header{
+    height:10vh;
+    font-size:1rem;
+    background-color:#00A0DC;
+    border: 2px solid #00A0DC;
+    margin:0
+}
+.aside{
+    height:90vh;
+    background-color:#00A0DC;
+    border: 2px solid #00A0DC;
+}
+.mainPage {
+   height: 90vh;
+   width: 100%;
+   
+   justify-content:center;
+   
+   overflow-y: scroll;
+}
+#art {
+    width: 20%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-block: 15px;
+    margin-inline:15px;
+    overflow:hidden;
+    background-color: #111111;
+    
+    padding-top: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between
+
+}
+.artImg{
+    width:100%;
+    padding-inline: 10px;
+    
+}
+h5{
+    font-size: 1.7rem;
+    margin-top:20px;
+    color:#00A0DC
+}
+p{
+    color:whitesmoke;
+    font-size:1.5rem;
+    padding-top: 10px
+}
+.card-body {
+         background-color: #111111;
+         padding-inline: 10px;
+         margin-bottom: 20px;
+         
+}
+#artBtn {
+    width: 100%;
+    color:whitesmoke;
+    margin-top:0;
+    margin-bottom:0;
+    margin-right:0;
+    margin-left:0;
+    border: 2px solid #00A0DC;
+    padding-block:0;
+    background-color:#00A0DC;
+    font-size:1.5rem
+    
+    
+
+}
+#artBtn a {
+    font-size:1.5rem;
+    color:whitesmoke;
+    text-decoration:none
+}
+#btnDiv{
+    height:20%;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    
+    
+}
+.coName{
+    font-family: 'Grand Hotel', cursive;
+    font-size:3rem;
+    
+}
+#hero{
+    background-image: url(https://scontent.fcta2-1.fna.fbcdn.net/v/t39.30808-6/290634647_1080392315920037_7189868165740376076_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=1a1LUknWI6oAX8RRgPv&_nc_ht=scontent.fcta2-1.fna&oh=00_AfDU1SQ9fEWynU4ITVjvyy0aX99Ua5KorZ2ZbHcsPPZxKQ&oe=639A412F);
+    background-position: center;
+    background-size:cover;
+    box-shadow: inset 50px -50px 50px 50px rgba(0,0,0,0.60);
+    max-height:350px
+}
+#heroTxt{
+    background-color:rgba(2,2,2,0.65);
+    width:70%
+}
+.jumbo{
+    display:block;
+    width: 90%;
+    max-height:350px
+    
+}
+
+.prime {
+    background-color:#00A0DC;
+    color:whitesmoke
+}
+.detail{
+    background-color: #111111;
+    padding: 3rem;
+    margin-inline:auto
+    
+}
+.detailName {
+    color:#00A0DC
+}
+.detail p {
+    color: whitesmoke
+}
+.detailBtn {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    font-size: 1.4rem;
+    border-radius:10px
+    
+}
+.prime:hover{
+    background-color: orange
+}
+.CartTot{
+    text-align:center;
+    color:#00A0DC;
+    font-size: 2rem
+}
+.cart {
+    background-color:#111111;
+    
+}
+.CartTitle {
+    color:#00A0DC
+}
+.CartBtn {
+    width:120px
+}
+.CartBtn:nth-of-type(2) {
+    background-color:#00A0DC;
+    color:whitesmoke
+    
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+   
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00A0DC; 
+  
+}
+
+
+
+  
+</style>
+<script src="https://kit.fontawesome.com/5ae1de6ea9.js" crossorigin="anonymous"></script>
+</body>
+</html>
